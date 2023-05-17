@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LOGISTICA</title>
+  </head>
+  <body>
+    <form action="" method="POST" name="FormDireccion" target="_blank">
+       <fieldset> <!--agrupa varios elementos del form-->
+         <legend>DIRECCION DE ENVIO</legend>
+         Calle Principal <br>
+         <input type="text" name="txtPrincipal" value="">
+         <br><br>
+         Transversal<br>
+         <input type="text" name="txtTransversal" value="">       
+		    <br><br>
+	      	<input type="checkbox" id="propietario"> Entrega al propietario.<br>
+         <input type="checkbox" id="tercero"> Entrega a un tercero.
+         <br><br>
+         Cantones: <select  name="cmbCantones">
+					<option value="Q">Quito</option>
+					<option value="R">Rumiñahui</option>
+					<option value="M">Mejia</option>
+					<option value="G">Guayaquil</option>
+					<option value="S">Santa Elena</option>
+					<option value="SL">Salinas</option>
+         </select>
+		 
+         <br><br>
+           <button type="submit" id="boton"> Enviar Datos</button>
+       </fieldset>
+    </form>
+	<br>
+    <form action="" method="POST" name="FormConfidencial" target="_blank" id="informacionConfidencial">
+      <br>  
+       <fieldset>
+         <legend>INFORMACIÓN CONFIDENCIAL</legend>
+         Código Postal: 
+         <input type="password" name="pswCodigoPostal" value="">
+         
+		 <br><br>
+         Referencia de la Dirección:<br>
+         <textarea name="Mensaje" rows="3" cols="30" id="Mensaje"></textarea><br>
+         <br>
+           <input type="submit" name="SubmitConfidencial" value="Guardar">
+       </fieldset>
+    </form>
+    <br><br>
+    <a href="index.html">Regresar</a>
+    
+  </body>
+  <script src="JavaScript/activaciones.js"></script>
+</html>
